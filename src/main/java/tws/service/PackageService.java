@@ -10,8 +10,8 @@ import java.util.List;
 public class PackageService {
     @Autowired
     PackageMapper packageMapper;
-    public void insertPackage(Package package){
-        packageMapper.insert(package);
+    public void insertPackage(Package package1){
+        packageMapper.insert(package1);
 
     }
 

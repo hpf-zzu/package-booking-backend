@@ -17,9 +17,9 @@ public class PackageController {
     @Autowired
     PackageService packageService;
     @PostMapping("")
-    public ResponseEntity<Package> insert(@RequestBody Package package){
-        packageService.insertPackage(package);
-        return ResponseEntity.created(URI.create("/packages/" + package.getPurchaseNumber())).body(package);
+    public ResponseEntity<Package> insert(@RequestBody Package package1){
+        packageService.insertPackage(package1);
+        return ResponseEntity.created(URI.create("/packages/" + package1.getPurchaseNumber())).body(package1);
     }
 
 

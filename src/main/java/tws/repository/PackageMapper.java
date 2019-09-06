@@ -7,6 +7,6 @@ import tws.entity.Package;
 import java.util.List;
 @Mapper
 public interface PackageMapper {
-    void insert(@Param("package") Package package);
+    void insert(@Param("package1") Package package1);
 
 }
